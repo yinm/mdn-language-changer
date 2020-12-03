@@ -1,4 +1,3 @@
-
 // ==UserScript==
 // @name         mdn-language-changer
 // @namespace    https://yinm.info/
