@@ -16,7 +16,7 @@ require("esbuild")
   .build({
     entryPoints: ["src/main.ts"],
     bundle: true,
-    outfile: "tampermonkey/main.js",
+    outfile: "tampermonkey/main.user.js",
     format: "iife",
     banner,
   })
