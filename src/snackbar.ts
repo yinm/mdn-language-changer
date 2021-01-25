@@ -1,6 +1,14 @@
-export function createSnackbar(languageNameInMdn: string): HTMLDivElement {
+export function showSnackbar(message: string, ms = 5000): void {
+  const snackbar = createSnackbar(message);
+
+  setTimeout(() => {
+    snackbar.style.display = "none";
+  }, ms);
+}
+
+function createSnackbar(message: string): HTMLDivElement {
   const snackbar = document.createElement("div");
-  snackbar.textContent = `${languageNameInMdn} is not found.`;
+  snackbar.textContent = message;
   snackbar.style.cssText = `
 --heightValue: 3rem;
 
