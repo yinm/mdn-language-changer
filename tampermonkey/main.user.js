@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name         mdn-language-changer
 // @namespace    https://yinm.info/
-// @version      0.2.0
+// @version      0.3.0
 // @description  Change MDN doc's languages (English <-> Japanese) by hotkeys.
 // @author       yinm
 // @match        https://developer.mozilla.org/*
