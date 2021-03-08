@@ -541,7 +541,7 @@ box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
   ];
   languages.forEach((language) => {
     mousetrap.default.bind(language.hotkey, () => {
-      const languageSelector = document.querySelector("#select_language");
+      const languageSelector = document.querySelector("#language-selector");
       if (languageSelector === null) {
         showSnackbar("Current language only.");
         return;

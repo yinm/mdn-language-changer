@@ -17,7 +17,7 @@ const languages = [
 languages.forEach((language) => {
   MouseTrap.bind(language.hotkey, () => {
     const languageSelector = document.querySelector<HTMLSelectElement>(
-      "#select_language"
+      "#language-selector"
     );
     if (languageSelector === null) {
       showSnackbar("Current language only.");
